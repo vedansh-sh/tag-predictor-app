@@ -1,4 +1,3 @@
-@'
 import os
 import re
 import warnings
@@ -58,4 +57,3 @@ if st.button("Predict tags"):
         for i in top_idx:
             st.write(f"{mlb.classes_[i]}  -  {probs[i]:.2f}")
             st.progress(min(float(probs[i]), 1.0))
-'@ | Set-Content -Encoding ascii app.py
